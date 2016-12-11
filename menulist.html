@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>ADD ITEMS</title>
+    <style>
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: black;
+        }
+        li {
+            float: left;
+        }
+        li a {
+            display: inline-block;
+            color: white;
+            text-align: center;
+            padding: 25px 100px;
+            text-decoration: none;
+        }
+        li{
+            display: inline-block;
+        }
+        .active
+        {
+            background-color:navy;
+        }
+        .vinowaseem
+        {
+            height:510px;
+            width:630px;
+            margin-top:115px;
+            margin-left:580px;
+            border:3px solid black;
+        }
+
+        .arun{
+            background-color:mediumvioletred;
+            color: white;
+            height:50%;
+            width:45%;
+            font-size: 22px;
+            border: 2px solid;
+        }
+        .bb {
+            display: inline-block;
+            border-radius: 4px;
+            background-color: crimson;
+            border: none;
+            color: ghostwhite;
+            text-align: center;
+            font-size: 23px;
+            padding: 15px;
+            width: 166px;
+            -webkit-transition-duration: 0.4s;
+            transition-duration: 0.4s;
+            cursor: pointer;
+        }
+        .bb span {
+            cursor: pointer;
+            display: inline-block;
+            position: relative;
+        }
+
+        .bb span:after {
+            content:none;
+            position: absolute;
+            opacity: 0;
+            top: 0;
+            right: -20px;
+        }
+        .bb:hover {
+            box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+        }
+
+    </style>
+</head>
+<body>
+<ul>
+    <li><a class="active" href="" style="font-size:20px;">ADD NEWITEMS</a></li>
+    <li style="background-color:crimson;"><a href="todaymenus.html" style="font-size:20px;">TODAY MENUS</a></li>
+    <li><a href=""  style="font-size:20px;background-color:deepskyblue;">OFFERS</a></li>
+    <li style="background-color:darkmagenta;"><a href="" style="font-size:20px;">RECIEVE ORDER</a></li>
+</ul>
+<div class="vinowaseem">
+    <form>
+        <br> <br> <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <label style="color:darkblue;font-size:30px;"> ITEM NAME</label>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <input type="text"style="font-size:23px; background-color:blanchedalmond" name="in">
+        <br><br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <label style="color:darkblue;font-size:30px;"> CATEGORY</label>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <select  class="arun" name="cat1">
+            <option style="background-color: azure;color:black;" value="breakfast">BREAKFAST</option>
+            <option style="background-color: azure;color:black;" value="launch">LAUNCH</option>
+            <option style="background-color: azure;color:black;" value="dinner">DINNER</option>
+            <option style="background-color: azure;color:black;" value="snacks">SNACKS</option>
+            <option style="background-color: azure;color:black;" value="cools&beverages">COOLS&BEVERAGES</option>
+        </select>
+        <br><br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <label style="color:darkblue;font-size:30px;">ITEMTYPE</label>
+        &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <select  class="arun" name="cat2">
+            <option style="background-color: azure;color:black;" value="breakfast">REGULAR</option>
+            <option style="background-color: azure;color:black;" value="launch">IRREGULAR</option>
+            <option style="background-color: azure;color:black;" value="dinner">NONE</option>
+        </select>
+        <br><br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <label style="color:darkblue;font-size:30px;">PRICE</label>
+        &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <input style="font-size:23px; background-color:blanchedalmond" type="password" name="pr"><br>
+        <br><br><br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <span> <input type="submit"  class="bb"  style="vertical-align:middle" value="SUBMIT"></span> &nbsp;&nbsp;&nbsp;
+        <span><input type="cancel"  class="bb"  style="vertical-align:middle" value="CANCEL"></span> &nbsp;
+    </form>
+</div>
+</body>
+</html>
+
